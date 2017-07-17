@@ -40,3 +40,22 @@
 			第一步用命令git reset HEAD file，就回到了场景1，
 			第二步按场景1操作。
 	场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
+
+11. 建立远程git库,本地已有库
+	a. git remote add origin git@github.com:pxccl/RL.git
+	b. git push -u origin master
+
+12. 分支管理
+	a. 查看分支
+		git branch
+	b. 创建分支
+		git branch [branchName]
+	c. 删除分支
+		git branch -d [branchName]
+	d. 切换分支
+		git checkout [branchName]
+	e. 创建并切换分支
+		git checkout -b [branchName]
+	f. 合并分支
+		git merge [branchName]
+
