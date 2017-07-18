@@ -57,5 +57,12 @@
 	e. 创建并切换分支
 		git checkout -b [branchName]
 	f. 合并分支
-		git merge [branchName]
+		git merge [branchName]     <Fast forward>模式,合并后,若删除分支,则分支历史记录消失
+		git merge --no-ff -m "注释" [branchName]  普通模式合并,若删除分支,分支历史保留
+
+13. 暂存工作区未commit修改,去做其他任务
+	git stash
+	...其他工作...
+	git stash list
+	git stash pop = git stash apply [stashName] + git stash drop [stashName]
 
