@@ -8,6 +8,8 @@
 3. 将变动文件加入缓冲区
 	git add [Filename|*]
 
+	git rm [Filename]
+
 4. 将缓冲区文件放入版本库
 	git commit -m "文件说明"
 
